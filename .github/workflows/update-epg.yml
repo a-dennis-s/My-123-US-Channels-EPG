@@ -5,10 +5,9 @@ on:
     # Run every day at 03:00 UTC
     - cron: "0 3 * * *"
 
-  # Allows you to run it manually from GitHub Actions
+  # Allows manual execution from GitHub Actions
   workflow_dispatch:
 
-# Allow the workflow to commit guide.xml back to the repository
 permissions:
   contents: write
 
@@ -19,26 +18,25 @@ jobs:
     steps:
       # 1. Check out your repository
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # 2. Install Node.js
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
-          cache: npm
 
       # 3. Download the latest iptv-org EPG grabber
       - name: Download iptv-org EPG tools
         run: |
-          git clone --depth 1 https://github.com/iptv-org/epg.git epg
+          git clone --depth 1 -b master https://github.com/iptv-org/epg.git epg
 
       # 4. Install EPG grabber dependencies
       - name: Install EPG dependencies
         working-directory: epg
         run: npm install
 
-      # 5. Generate guide.xml using your custom channel list
+      # 5. Generate guide.xml from your custom channel list
       - name: Generate guide.xml
         working-directory: epg
         run: |
@@ -47,7 +45,7 @@ jobs:
             --output=../guide.xml \
             --lang=en
 
-      # 6. Check that guide.xml was actually created
+      # 6. Verify that guide.xml was created
       - name: Verify guide.xml
         run: |
           if [ ! -f guide.xml ]; then
@@ -62,7 +60,7 @@ jobs:
           echo "Number of programmes:"
           grep -c "<programme " guide.xml || true
 
-      # 7. Commit the new guide.xml to your repository
+      # 7. Commit the updated guide.xml
       - name: Commit updated guide.xml
         run: |
           git config user.name "github-actions[bot]"
