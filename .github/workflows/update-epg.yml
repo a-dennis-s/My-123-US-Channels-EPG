@@ -2,10 +2,8 @@ name: Update EPG
 
 on:
   schedule:
-    # Run every day at 03:00 UTC
     - cron: "0 3 * * *"
 
-  # Allows manual execution from GitHub Actions
   workflow_dispatch:
 
 permissions:
@@ -26,26 +24,37 @@ jobs:
         with:
           node-version: 22
 
-      # 3. Download the latest iptv-org EPG grabber
+      # 3. Download the latest iptv-org EPG tools
       - name: Download iptv-org EPG tools
         run: |
           git clone --depth 1 -b master https://github.com/iptv-org/epg.git epg
 
-      # 4. Install EPG grabber dependencies
+      # 4. Install iptv-org dependencies
       - name: Install EPG dependencies
         working-directory: epg
         run: npm install
 
-      # 5. Generate guide.xml from your custom channel list
-      - name: Generate guide.xml
+      # 5. Generate the primary guide from iptv-org
+      - name: Generate iptv-org guide
         working-directory: epg
         run: |
           npm run grab -- \
             --channels=../custom_epg_channels.xml \
-            --output=../guide.xml \
+            --output=../guide-iptv-org.xml \
             --lang=en
 
-      # 6. Verify that guide.xml was created
+      # 6. Install Python dependencies for the fallback merger
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      # 7. Apply EPG.PW fallback schedules
+      - name: Apply EPG.PW fallbacks
+        run: |
+          python scripts/merge_epg_pw.py
+
+      # 8. Verify final guide
       - name: Verify guide.xml
         run: |
           if [ ! -f guide.xml ]; then
@@ -57,10 +66,13 @@ jobs:
           echo "File size:"
           du -h guide.xml
 
+          echo "Number of channels:"
+          grep -c "<channel " guide.xml || true
+
           echo "Number of programmes:"
           grep -c "<programme " guide.xml || true
 
-      # 7. Commit the updated guide.xml
+      # 9. Commit the updated guide
       - name: Commit updated guide.xml
         run: |
           git config user.name "github-actions[bot]"
