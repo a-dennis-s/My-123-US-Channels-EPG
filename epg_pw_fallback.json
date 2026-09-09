@@ -40,12 +40,6 @@
       "region": "US"
     },
     {
-      "iptv_org_id": "CMT.us@East",
-      "epg_pw_channel_id": "465107",
-      "epg_pw_name": "CMT HD",
-      "region": "US"
-    },
-    {
       "iptv_org_id": "CNN.us",
       "epg_pw_channel_id": "464857",
       "epg_pw_name": "CNN HD",
@@ -124,6 +118,12 @@
       "region": "US"
     },
     {
+      "iptv_org_id": "EstrellaTV.us@SD",
+      "epg_pw_channel_id": "464915",
+      "epg_pw_name": "Estrella TV",
+      "region": "US"
+    },
+    {
       "iptv_org_id": "HSN.us@East",
       "epg_pw_channel_id": "464751",
       "epg_pw_name": "HSN Home Shopping Network HD",
@@ -133,6 +133,12 @@
       "iptv_org_id": "LawCrime.us@SD",
       "epg_pw_channel_id": "464971",
       "epg_pw_name": "Law and Crime",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "MSNOW.us@SD",
+      "epg_pw_channel_id": "464889",
+      "epg_pw_name": "MS NOW HD",
       "region": "US"
     },
     {
