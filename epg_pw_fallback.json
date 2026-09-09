@@ -1,0 +1,265 @@
+{
+  "provider": "epg.pw",
+  "base_url": "https://epg.pw/api/epg.xml?channel_id={channel_id}",
+  "fallback_only": true,
+  "channels": [
+    {
+      "iptv_org_id": "AccuWeatherNOW.us@SD",
+      "epg_pw_channel_id": "465193",
+      "epg_pw_name": "AccuWeather HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "AMC.us@EastHD",
+      "epg_pw_channel_id": "465032",
+      "epg_pw_name": "AMC HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "AnimalPlanet.us@East",
+      "epg_pw_channel_id": "465310",
+      "epg_pw_name": "Animal Planet HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "AXSTV.us@SD",
+      "epg_pw_channel_id": "464771",
+      "epg_pw_name": "AXS TV",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "BoomerangTV.us@US",
+      "epg_pw_channel_id": "464755",
+      "epg_pw_name": "Boomerang",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "Bounce.us@SD",
+      "epg_pw_channel_id": "465292",
+      "epg_pw_name": "Bounce TV",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "CMT.us@East",
+      "epg_pw_channel_id": "465107",
+      "epg_pw_name": "CMT HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "CNN.us",
+      "epg_pw_channel_id": "464857",
+      "epg_pw_name": "CNN HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "CartoonNetwork.us@East",
+      "epg_pw_channel_id": "465267",
+      "epg_pw_name": "Cartoon Network HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "CatholicFaithNetwork.us@SD",
+      "epg_pw_channel_id": "464982",
+      "epg_pw_name": "CFN CATHOLIC FAITH NETWORK",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "Charge.us@SD",
+      "epg_pw_channel_id": "465085",
+      "epg_pw_name": "CHARGE!",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "Cinemax.us@East",
+      "epg_pw_channel_id": "464917",
+      "epg_pw_name": "Cinemax HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "CinemaxHits.us@East",
+      "epg_pw_channel_id": "464945",
+      "epg_pw_name": "Cinemax Hits",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "CineMexicano.us@SD",
+      "epg_pw_channel_id": "465233",
+      "epg_pw_name": "Cine Mexicano US Feed",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "CookingChannel.us@SD",
+      "epg_pw_channel_id": "465211",
+      "epg_pw_name": "Cooking Channel HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "Comet.us@SD",
+      "epg_pw_channel_id": "465305",
+      "epg_pw_name": "Comet",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "CourtTV.us@SD",
+      "epg_pw_channel_id": "465226",
+      "epg_pw_name": "Court TV",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "CrimeInvestigation.us@SD",
+      "epg_pw_channel_id": "465040",
+      "epg_pw_name": "Crime and Investigation Network HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "DiscoveryChannel.us@SD",
+      "epg_pw_channel_id": "465364",
+      "epg_pw_name": "Discovery Channel HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "DePeliculaUS.us@SD",
+      "epg_pw_channel_id": "465381",
+      "epg_pw_name": "De Pelicula",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "HSN.us@East",
+      "epg_pw_channel_id": "464751",
+      "epg_pw_name": "HSN Home Shopping Network HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "LawCrime.us@SD",
+      "epg_pw_channel_id": "464971",
+      "epg_pw_name": "Law and Crime",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "MTVLive.us@SD",
+      "epg_pw_channel_id": "464825",
+      "epg_pw_name": "MTVLIVE",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "NewsmaxTV.us@SD",
+      "epg_pw_channel_id": "464863",
+      "epg_pw_name": "Newsmax TV HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "OneAmericaNewsNetwork.us@SD",
+      "epg_pw_channel_id": "465382",
+      "epg_pw_name": "One America News Network HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "PixLTV.us@SD",
+      "epg_pw_channel_id": "464896",
+      "epg_pw_name": "PixL",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "PursuitChannel.us@SD",
+      "epg_pw_channel_id": "465098",
+      "epg_pw_name": "Pursuit Channel",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "RFDTV.us@SD",
+      "epg_pw_channel_id": "464756",
+      "epg_pw_name": "RFD TV HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "Revolt.us@SD",
+      "epg_pw_channel_id": "465207",
+      "epg_pw_name": "Revolt HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "ScrippsNews.us@SD",
+      "epg_pw_channel_id": "464874",
+      "epg_pw_name": "Scripps News",
+      "region": "US"
+    },
+        {
+      "iptv_org_id": "SonyCine.us@SD",
+      "epg_pw_channel_id": "464793",
+      "epg_pw_name": "Sony Cine",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "SYFY.us@East",
+      "epg_pw_channel_id": "465053",
+      "epg_pw_name": "Syfy HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "StarzCinema.us@East",
+      "epg_pw_channel_id": "465115",
+      "epg_pw_name": "Starz Cinema HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "StarzComedy.us@East",
+      "epg_pw_channel_id": "464979",
+      "epg_pw_name": "Starz Comedy HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "StarzEncoreFamily.us@East",
+      "epg_pw_channel_id": "465242",
+      "epg_pw_name": "Starz Encore Family SD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "Tastemade.us@US",
+      "epg_pw_channel_id": "465110",
+      "epg_pw_name": "Tastemade",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "TBS.us@US",
+      "epg_pw_channel_id": "465285",
+      "epg_pw_name": "TBS HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "TheFirstTV.us@SD",
+      "epg_pw_channel_id": "465178",
+      "epg_pw_name": "The First",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "TNT.us@East",
+      "epg_pw_channel_id": "465114",
+      "epg_pw_name": "TNT HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "TruTV.us@US",
+      "epg_pw_channel_id": "464987",
+      "epg_pw_name": "truTV HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "Univision.us@East",
+      "epg_pw_channel_id": "464782",
+      "epg_pw_name": "Univision Network HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "WeatherNation.us@SD",
+      "epg_pw_channel_id": "464933",
+      "epg_pw_name": "Weather Nation TV HD",
+      "region": "US"
+    },
+    {
+      "iptv_org_id": "YesNetwork.us@SD",
+      "epg_pw_channel_id": "496607",
+      "epg_pw_name": "Yes Network",
+      "region": "US"
+    }
+  ]
+}
